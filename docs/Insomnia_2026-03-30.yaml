@@ -1,0 +1,292 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: S1_R3_R4-AT2_PBE 2
+meta:
+  id: wrk_b5ecc6c63ae9410a8695318a9108bdf9
+  created: 1774895167118
+  modified: 1774895167118
+  description: ""
+collection:
+  - name: categorias
+    meta:
+      id: fld_ff66e66e7a7349f1bd9f919b0f69b52f
+      created: 1774895177200
+      modified: 1774895177200
+      sortKey: -1774895177200
+      description: ""
+    children:
+      - url: http://localhost:8080/categorias/2
+        name: categoriaDelete
+        meta:
+          id: req_fc7f7932b9644755a60a52157a16fea1
+          created: 1774895254208
+          modified: 1774897573382
+          isPrivate: false
+          description: ""
+          sortKey: -1774895255842
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias
+        name: categoriaPut
+        meta:
+          id: req_7f9c28931b224fbfbb24f802e7f2aaee
+          created: 1774895258232
+          modified: 1774897951698
+          isPrivate: false
+          description: ""
+          sortKey: -1774895255942
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Abcdefg",
+            	"descricao": "abcdefg"
+            }
+        parameters:
+          - name: id
+            value: "3"
+            description: ""
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias
+        name: categoriaPost
+        meta:
+          id: req_e66e3e85bf5949e8add9c3d30cb9b34a
+          created: 1774895261280
+          modified: 1774897414535
+          isPrivate: false
+          description: ""
+          sortKey: -1774895256042
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"nome": "Elétrico",
+            	"descricao": "Raios"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/categorias
+        name: categoriaGet
+        meta:
+          id: req_35c7519502a2468aa89153300c87fe16
+          created: 1774895264348
+          modified: 1774897643379
+          isPrivate: false
+          description: ""
+          sortKey: -1774895256142
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+  - name: produtos
+    meta:
+      id: fld_278efe6f6df24c62aaace1dfa7cc2f99
+      created: 1774895183468
+      modified: 1774895183468
+      sortKey: -1774895183468
+      description: ""
+    children:
+      - url: http://localhost:8080/produtos/2
+        name: produtoDelete
+        meta:
+          id: req_5456abed58f04194baa167bd6b262f39
+          created: 1774895186465
+          modified: 1774897205801
+          isPrivate: false
+          description: ""
+          sortKey: -1774895186465
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos
+        name: produtoPut
+        meta:
+          id: req_78da6888a00f41d89d4a27e1a25a6d17
+          created: 1774895192894
+          modified: 1774897966503
+          isPrivate: false
+          description: ""
+          sortKey: -1774895186565
+        method: PUT
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: nome
+              value: tecladoBranco
+              description: ""
+              disabled: false
+            - name: valor
+              value: "200"
+              description: ""
+              disabled: false
+            - name: image
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44968756836\Desktop\3°Semestre\PPDM\S1_R2-AT3_PPDM1\assets\tecladoBranco.png
+              type: file
+        parameters:
+          - name: id
+            value: "1"
+            description: ""
+            disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos
+        name: produtoPost
+        meta:
+          id: req_6a53815609a647e4ae05f082868423cd
+          created: 1774895199381
+          modified: 1774896021021
+          isPrivate: false
+          description: ""
+          sortKey: -1774895186665
+        method: POST
+        body:
+          mimeType: multipart/form-data
+          params:
+            - name: image
+              value: ""
+              description: ""
+              disabled: false
+              fileName: C:\Users\44968756836\Downloads\tecladoBranco.png
+              type: file
+            - name: idCategoria
+              value: "2"
+              description: ""
+              disabled: false
+            - name: nome
+              value: Teclado
+              description: ""
+              disabled: false
+            - name: valor
+              value: "300"
+              description: ""
+              disabled: false
+        headers:
+          - name: Content-Type
+            value: multipart/form-data
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/produtos
+        name: produtoGet
+        meta:
+          id: req_97d856780bad4d0099d849f38e357e04
+          created: 1774895203222
+          modified: 1774897191015
+          isPrivate: false
+          description: ""
+          sortKey: -1774895186765
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.3.1
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_cb9e52d466ab210c72378240a0f6c7dd3871ad70
+    created: 1774895167145
+    modified: 1774895167145
+environments:
+  name: Base Environment
+  meta:
+    id: env_cb9e52d466ab210c72378240a0f6c7dd3871ad70
+    created: 1774895167138
+    modified: 1774895167138
+    isPrivate: false
